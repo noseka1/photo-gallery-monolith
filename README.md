@@ -16,6 +16,12 @@ You can build this project using:
 mvn clean package
 ```
 
+Or you can rebuild the entire monolithic application including its components using:
+
+```
+./build-all.sh
+```
+
 You can run this application using:
 
 ```
