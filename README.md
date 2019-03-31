@@ -51,7 +51,7 @@ To retrieve likes received by all photos:
 curl -v localhost:8083/likes
 ```
 
-To retrieve all photos from a specific category ordered by number of likes:
+To retrieve all photos from a specific category ordered by the number of likes:
 
 ```
 curl localhost:8083/query?category=animals
