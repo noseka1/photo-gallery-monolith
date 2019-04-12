@@ -6,6 +6,8 @@
 # It is assumed that you cloned the component git repos so
 # that they are located under the same parent directory.
 
+set -e
+
 # absolute path to this script
 SCRIPT=$(readlink -f $0)
 

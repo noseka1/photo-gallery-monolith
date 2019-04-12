@@ -25,7 +25,7 @@ Or you can rebuild the entire monolithic application including its components us
 You can run this application using:
 
 ```
-java -jar ./target/photo-gallery-monolith-1.0-SNAPSHOT-fat.jar
+java -jar target/photo-gallery-monolith-1.0-SNAPSHOT-runner.jar
 ```
 
 After the application starts up you can test it using curl.
@@ -33,9 +33,9 @@ After the application starts up you can test it using curl.
 To create some photos:
 
 ```
-curl -v -X POST --data '{"name":"Odie","category":"animals"}' localhost:8083/photos
-curl -v -X POST --data '{"name":"Garfield","category":"animals"}' localhost:8083/photos
-curl -v -X POST --data '{"name":"Empire state building","category":"buildings"}' localhost:8083/photos
+curl -v -X POST -H 'Content-Type: application/json' --data '{"name":"Odie","category":"animals"}' localhost:8083/photos
+curl -v -X POST -H 'Content-Type: application/json' --data '{"name":"Garfield","category":"animals"}' localhost:8083/photos
+curl -v -X POST -H 'Content-Type: application/json' --data '{"name":"Empire state building","category":"buildings"}' localhost:8083/photos
 ```
 
 To retrieve all created photos:
@@ -47,8 +47,8 @@ curl -v localhost:8083/photos
 To add some likes to the photo with ID 00cb8ab367bf4f8486e58cbf905792e0:
 
 ```
-curl -v -X POST --data '{"id":"00cb8ab367bf4f8486e58cbf905792e0","likes":"5"}' localhost:8083/likes
-curl -v -X POST --data '{"id":"00cb8ab367bf4f8486e58cbf905792e0","likes":"2"}' localhost:8083/likes
+curl -v -X POST -H 'Content-Type: application/json' --data '{"id":"00cb8ab367bf4f8486e58cbf905792e0","likes":"5"}' localhost:8083/likes
+curl -v -X POST -H 'Content-Type: application/json' --data '{"id":"00cb8ab367bf4f8486e58cbf905792e0","likes":"2"}' localhost:8083/likes
 ```
 
 To retrieve likes received by all photos:
