@@ -47,8 +47,8 @@ curl -v localhost:8083/photos
 To add some likes to the photo with ID 00cb8ab367bf4f8486e58cbf905792e0:
 
 ```
-curl -v -X POST -H 'Content-Type: application/json' --data '{"id":"00cb8ab367bf4f8486e58cbf905792e0","likes":"5"}' localhost:8083/likes
-curl -v -X POST -H 'Content-Type: application/json' --data '{"id":"00cb8ab367bf4f8486e58cbf905792e0","likes":"2"}' localhost:8083/likes
+curl -v -X POST -H 'Content-Type: application/json' --data '{"id":"2","likes":"5"}' localhost:8083/likes
+curl -v -X POST -H 'Content-Type: application/json' --data '{"id":"2","likes":"2"}' localhost:8083/likes
 ```
 
 To retrieve likes received by all photos:
