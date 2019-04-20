@@ -1,7 +1,5 @@
 # photo-gallery-monolith
 
-Photo Gallery monolithic application
-
 This is a monolithic server application that is composed of the three components:
 
 * Photo component
@@ -9,6 +7,8 @@ This is a monolithic server application that is composed of the three components
 * Query component
 
 Note that each of the components can be deployed as a standalone microservice if so desired.
+
+## Build
 
 You can build this project using:
 
@@ -21,6 +21,18 @@ Or you can rebuild the entire monolithic application including its components us
 ```
 ./build-all.sh
 ```
+
+## Database
+
+This application requires access to a PostgreSQL database. You can create it using:
+
+```
+psql -c 'CREATE DATABASE monodb'
+psql -c "CREATE USER monouser WITH ENCRYPTED PASSWORD 'password'"
+psql -c 'GRANT ALL PRIVILEGES ON DATABASE monodb TO monouser'
+```
+
+## Run
 
 You can run this application using:
 
