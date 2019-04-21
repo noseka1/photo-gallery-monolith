@@ -88,6 +88,7 @@ Deploy a PostgreSQL database:
 ```
 oc new-app \
 --template postgresql-persistent \
+--param DATABASE_SERVICE_NAME=postgresql \
 --param POSTGRESQL_USER=monouser \
 --param POSTGRESQL_PASSWORD=password \
 --param POSTGRESQL_DATABASE=monodb
