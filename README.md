@@ -2,9 +2,9 @@
 
 This is a monolithic server application that is composed of the three components:
 
-* Photo component
-* Like component
-* Query component
+* [Photo component](../photo-gallery-photo)
+* [Like component](../photo-gallery-like)
+* [Query component](../photo-gallery-query)
 
 Note that each of the components can be deployed as a standalone microservice if so desired.
 
