@@ -2,9 +2,9 @@
 
 This is a monolithic server application that is composed of the three components:
 
-* [Photo component](/noseka1/photo-gallery-photo)
-* [Like component](/noseka1/photo-gallery-like)
-* [Query component](/noseka1/photo-gallery-query)
+* [Photo component](https://github.com/noseka1/photo-gallery-photo)
+* [Like component](https://github.com/noseka1/photo-gallery-like)
+* [Query component](https://github.com/noseka1/photo-gallery-query)
 
 Note that each of the components can be deployed as a standalone microservice if so desired.
 
